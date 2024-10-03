@@ -23,7 +23,7 @@ plugins:
       #   kwds:
       #     short: true
   # - meta
-  # - tags
+  - tags
   # - rss:
   #     match_path: "blog/posts/.*"
   #     date_from_meta:
