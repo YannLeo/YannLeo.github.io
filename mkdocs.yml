@@ -64,7 +64,7 @@ plugins:
       #   kwds:
       #     short: true
   # - meta
-  - mermaid2:
+  - mermaid2
   - tags
   # - rss:
   #     match_path: "blog/posts/.*"
