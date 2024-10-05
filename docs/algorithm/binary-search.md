@@ -14,3 +14,12 @@ import numpy as np
 class A:
     print('A')
 ```
+
+
+
+```mermaid
+graph LR
+    hello --> world
+    world --> again
+    again --> hello
+```
