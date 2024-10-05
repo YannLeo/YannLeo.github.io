@@ -1,6 +1,6 @@
 ---
 template: home.html
-title: title
+title: Rem
 ---
 # Welcome to my blogs
 
