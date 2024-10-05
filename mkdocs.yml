@@ -11,6 +11,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.indexes
     - content.code.copy
@@ -27,7 +28,7 @@ theme:
       primary: indigo
       # 链接等可交互元件的高亮色
       # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color
-      accent: orange
+      accent: blue
       toggle:
         # 图标
         icon: material/weather-night
@@ -86,16 +87,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-# nav:
-#   - Home: index.md
-#   - Tags: tags.md
-#   - Blog:
-#      - blog/index.md
-#      - blog/tags.md
-
-
-markdown_extensions:
   # [数学公式支持]
   # https://squidfunk.github.io/mkdocs-material/reference/math/#katex
   - pymdownx.arithmatex:
@@ -131,6 +122,18 @@ markdown_extensions:
   # [Markdown footnote 语法支持]
   # https://squidfunk.github.io/mkdocs-material/reference/footnotes/
   - footnotes
+  - pymdownx.superfences:
+        # make exceptions to highlighting of code:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
 extra_javascript:
   # [数学公式支持]
@@ -138,6 +141,7 @@ extra_javascript:
   - mkdocs/javascripts/katex.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - mkdocs/javascripts/mouse.js # 鼠标点击烟花效果
 extra_css:
   # [数学公式支持]
   # https://squidfunk.github.io/mkdocs-material/reference/math/#katex
@@ -147,3 +151,4 @@ extra_css:
   - mkdocs/css/no-footer.css
   # 无序列表符号自定义
   - mkdocs/css/unordered-list-symbols.css
+
