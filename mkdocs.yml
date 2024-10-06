@@ -160,6 +160,9 @@ nav:
     - 二分查找: algorithm/binary-search.md
     - 字符串:
       - algorithm/string/index.md
+      - 字符串匹配:
+        - algorithm/string/string_matching/index.md
+        - KMP: algorithm/string/string_matching/KMP.md
     - 图:
       - algorithm/graph/index.md
       - 最短路径:
