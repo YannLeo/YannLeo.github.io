@@ -3,11 +3,6 @@ site_description: an example blog set up following the blog tutorials
 site_url: http://YannLeo.github.io/
 site_author: YL
 
-nav:
-  - Home: index.md
-  - 数据结构与算法: 
-    - algorithm/index.md
-    - 二分查找: algorithm/binary-search.md
 
 theme:
   name: material
@@ -19,8 +14,12 @@ theme:
     - search.highlight
     - navigation.top
     - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs.sticky
     - navigation.path
+    - navigation.tracking
+    - navigation.footer
+    - toc.follow
+    # - header.autohide
   palette:
     - scheme: default
       # 主颜色
@@ -42,6 +41,7 @@ theme:
         icon: material/weather-sunny
         name: 切换至日间模式
   language: zh
+  logo: logo.png
   font:
     text: Roboto
     code: Roboto Mono
@@ -77,7 +77,7 @@ extra:
   social:
     - icon: fontawesome/brands/mastodon
       name: YL
-      link: https://fosstodon.org/@squidfunk
+      link: https://github.com/YannLeo
 
 # hooks:
 #   - hooks/socialmedia.py
@@ -107,7 +107,7 @@ markdown_extensions:
       # 显示行号
       linenums: true
       # 显示编程语言名称
-      auto_title: true
+      # auto_title: true
       # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#+pymdownx.highlight.line_spans
       line_spans: __span
       # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#+pymdownx.highlight.pygments_lang_class
@@ -148,7 +148,21 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   # [自定义 css]
   # 不使用底部的翻页
-  - mkdocs/css/no-footer.css
+  # - mkdocs/css/no-footer.css
   # 无序列表符号自定义
   - mkdocs/css/unordered-list-symbols.css
 
+
+nav:
+  - Home: index.md
+  - 数据结构与算法: 
+    - algorithm/index.md
+    - 二分查找: algorithm/binary-search.md
+    - 字符串:
+      - algorithm/string/index.md
+    - 图:
+      - algorithm/graph/index.md
+      - 最短路径:
+        - algorithm/graph/shortest_path/index.md
+        - Dijkstra: algorithm/graph/shortest_path/Dijkstra.md
+        
