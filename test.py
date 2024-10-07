@@ -1,27 +1,38 @@
-def kmp(s, t):
-    if not t: return 0
-    pi = [0] * len(t)
-    j = 0
-    for i in range(1, len(t)):
-        while j > 0 and t[i] != t[j]:
-            j = pi[j-1]
-        if t[i] == t[j]:
-            j += 1
-        pi[i] = j
+import heapq
 
-    j = 0
-    for i, c in enumerate(s):
-        while j > 0 and t[j] != c:
-            j = pi[j-1]
-        if t[j] == c:
-            j += 1
-        if j == len(t):
-            return i - j + 1
+def dijkstra(graph, start):
+    queue = []
+    heapq.heappush(queue, (0, start))
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    previous_nodes = {node: None for node in graph}
 
-    return -1
+    while queue:
+        current_distance, current_node = heapq.heappop(queue)
 
-if __name__ == '__main__':
-    text = "abababaabc"
-    pattern = "ababaab"
-    res = kmp(text, pattern)
-    print(res)
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                previous_nodes[neighbor] = current_node
+                heapq.heappush(queue, (distance, neighbor))
+
+    return distances, previous_nodes
+
+# 示例图
+graph = {
+    'A': {'B': 1, 'D': 4},
+    'B': {'A': 1, 'C': 2, 'E': 3},
+    'C': {'B': 2, 'F': 5},
+    'D': {'A': 4, 'E': 1},
+    'E': {'B': 3, 'D': 1, 'F': 2},
+    'F': {'C': 5, 'E': 2}
+}
+
+distances, previous_nodes = dijkstra(graph, 'A')
+print("Distances:", distances)
+print("Previous Nodes:", previous_nodes)

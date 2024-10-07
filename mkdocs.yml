@@ -168,4 +168,8 @@ nav:
       - 最短路径:
         - algorithm/graph/shortest_path/index.md
         - Dijkstra: algorithm/graph/shortest_path/Dijkstra.md
+    - 数学:
+      - algorithm/math/index.md
+    - 背包:
+      - algorithm/knapsack/index.md
         
