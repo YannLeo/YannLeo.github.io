@@ -168,6 +168,8 @@ nav:
       - 最短路径:
         - algorithm/graph/shortest_path/index.md
         - Dijkstra: algorithm/graph/shortest_path/Dijkstra.md
+        - Bellman-Ford: algorithm/graph/shortest_path/Bellman-Ford.md
+        - SPFA: algorithm/graph/shortest_path/SPFA.md
     - 数学:
       - algorithm/math/index.md
     - 背包:
