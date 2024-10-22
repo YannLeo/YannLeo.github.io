@@ -170,6 +170,10 @@ nav:
         - Dijkstra: algorithm/graph/shortest_path/Dijkstra.md
         - Bellman-Ford: algorithm/graph/shortest_path/Bellman-Ford.md
         - SPFA: algorithm/graph/shortest_path/SPFA.md
+      - 最小生成树:
+        - algorithm/graph/minimum_spanning_tree/index.md
+        - Kruskal: algorithm/graph/minimum_spanning_tree/Kruskal.md
+        - Prim: algorithm/graph/minimum_spanning_tree/Prim.md
     - 数学:
       - algorithm/math/index.md
     - 背包:
