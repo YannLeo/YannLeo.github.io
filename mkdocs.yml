@@ -178,4 +178,12 @@ nav:
       - algorithm/math/index.md
     - 背包:
       - algorithm/knapsack/index.md
-        
+      - 01背包: algorithm/knapsack/01_knapsack.md
+      - 完全背包: algorithm/knapsack/CompletePack.md
+      - 多重背包: algorithm/knapsack/MultiplePack.md
+      - 分组背包: algorithm/knapsack/GroupingPack.md
+  - 大模型:
+    - LLM/index.md
+    - 大模型基础:
+      - LLM/LLM/index.md
+      - 01.LLM介绍: LLM/LLM/01.大模型介绍.md
