@@ -187,3 +187,5 @@ nav:
     - 大模型基础:
       - LLM/LLM/index.md
       - 01.LLM介绍: LLM/LLM/01.大模型介绍.md
+      - 02.优缺点及分类: LLM/LLM/02.优缺点及分类.md
+      - 03.体系架构: LLM/LLM/03.体系架构.md
