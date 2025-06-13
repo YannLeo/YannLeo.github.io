@@ -145,6 +145,7 @@ extra_javascript:
 extra_css:
   # [数学公式支持]
   # https://squidfunk.github.io/mkdocs-material/reference/math/#katex
+  - https://unpkg.com/katex@0/dist/katex.min.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   # [自定义 css]
   # 不使用底部的翻页
@@ -189,3 +190,5 @@ nav:
       - 01.LLM介绍: LLM/LLM/01.大模型介绍.md
       - 02.优缺点及分类: LLM/LLM/02.优缺点及分类.md
       - 03.体系架构: LLM/LLM/03.体系架构.md
+      - 04.训练任务/目标: LLM/LLM/04.训练目标.md
+      - 05.涌现能力: LLM/LLM/05.涌现能力.md
