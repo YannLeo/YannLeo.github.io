@@ -192,3 +192,8 @@ nav:
       - 03.体系架构: LLM/LLM/03.体系架构.md
       - 04.训练任务/目标: LLM/LLM/04.训练目标.md
       - 05.涌现能力: LLM/LLM/05.涌现能力.md
+      - 06.Scaling Law: LLM/LLM/06.scaling_law.md
+    - 幻觉:
+      - LLM/Hallucination/index.md
+      - 07.幻觉: LLM/Hallucination/07-幻觉.md
+      - 08.幻觉评估: LLM/Hallucination/08-幻觉评估.md
