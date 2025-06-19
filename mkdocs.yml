@@ -197,3 +197,7 @@ nav:
       - LLM/Hallucination/index.md
       - 07.幻觉: LLM/Hallucination/07-幻觉.md
       - 08.幻觉评估: LLM/Hallucination/08-幻觉评估.md
+      - 09.幻觉缓解: LLM/Hallucination/09-幻觉缓解.md
+    - RAG:
+      - LLM/RAG/index.md
+      - 10.RAG介绍: LLM/RAG/10-RAG介绍.md
